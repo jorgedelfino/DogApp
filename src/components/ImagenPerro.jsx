@@ -29,6 +29,7 @@ const CargandoGif = styled.div`
 	background-position: center;
 	height: 350px;
 	width: 100%;
+	background-repeat: no-repeat;
 `
 
 const ImagenPerro = ({dogImg, cargando}) => {
