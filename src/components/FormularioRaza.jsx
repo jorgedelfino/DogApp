@@ -4,10 +4,10 @@ import styled from "styled-components"
 const BreedDogForm = styled.form`
 	margin-top: 16px;
 	display: flex;
-	flex-direction: column;
 	align-items: flex-start;
 	@media only screen and (max-width: 767px) {
 		align-items: center;
+		flex-direction: column;
 	}
 `
 
@@ -17,8 +17,12 @@ const BreedDogSelect = styled.select`
 	border-radius: 8px;
 	margin-bottom: 16px;
 	border-color: #4895EF;
+	margin-right: 30px;
 	&:focus {
 		border-color: #4CC9F0;
+	}
+	@media only screen and (max-width: 767px) {
+		margin-right: 0;
 	}
 `
 

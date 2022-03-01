@@ -2,8 +2,10 @@ import { useState } from "react"
 import styled from "styled-components"
 
 const RandomDogForm = styled.form`
+	display: flex;
+	align-items:center;
 	@media only screen and (max-width: 767px) {
-		display: flex;
+		flex-direction: column;
 		justify-content: center;
 	}
 `
@@ -40,6 +42,7 @@ const FormularioRandom = ({setDogImg, setCargando}) => {
 		<RandomDogForm
 			onSubmit={handleSubmit}
 		>
+			<h1>Random Dog</h1>
 			<RandomDogButton
 				type="submit"
 				value="¡Al Azar!"

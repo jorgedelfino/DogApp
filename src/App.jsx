@@ -6,6 +6,7 @@ import ImagenPerro from "./components/ImagenPerro"
 import Formularios from "./components/Formularios"
 
 const Container = styled.div`
+	height: 100vh;
 `
 
 const App = () => {

@@ -11,20 +11,25 @@ const Container = styled.div`
 	padding-bottom: 40px;
 	border-top: 5px solid;
 	border-color: #457b9d;
-	
+
 	h1 {
-		margin: 0;
-		margin-bottom: 24px;
+		margin-right: 30px;
 	}
 
 	div {
 		width: 80%;
 		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around
 	}
 
 	@media only screen and (max-width: 767px) {
+		h1 {
+			margin-right: 0px;
+			margin-bottom: 24px;
+		}
 		div {
-			display: flex;
 			flex-direction: column;
 			align-items: center;
 		}
@@ -35,7 +40,6 @@ const Formularios = ({setDogImg, setCargando}) => {
 	return (
 		<Container>
 			<div>
-				<h1>Random Dog</h1>
 				<FormularioRandom
 					setDogImg={setDogImg}
 					setCargando={setCargando}

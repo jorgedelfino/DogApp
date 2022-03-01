@@ -9,13 +9,14 @@ const Container = styled.div`
 	background-repeat: repeat;
 	img {
 		min-height: 100%;
+		max-height: 100vh;
 		width: 100%;
 	}
 	@media only screen and (min-width: 768px) {
 		display: flex;
 		justify-content: center;
 		img {
-			width: 50%;
+			width: auto;
 		}
 	}
 
